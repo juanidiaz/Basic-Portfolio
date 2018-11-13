@@ -2,7 +2,7 @@
 <html lang="eng">
 
 <head>
-    <title>Contact</title>
+    <title>Juan's Site</title>
     <!-- Linking CSS -->
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
     <!-- Linking jQuery -->
@@ -14,33 +14,33 @@
 
 <body>
 
-    <div class="topMenu">
-        <div class="nameTitle">
-            <h1>Juan I Diaz</h1>
+    <header>
+        <div class="topMenu">
+            <div class="nameTitle">
+                <h1>Juan I Diaz</h1>
+            </div>
+
+            <div id="links">
+                <ul>
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
         </div>
-
-        <div id="links">
-
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-
-        </div>
-    </div>
-
-    <br>
+    </header>
 
     <div class="mainBody">
         <h2>Contact</h2>
         <hr>
 
         <form id="contactForm">
-            <strong>Name:</strong><br>
-            <input type="text" name="fname"><br>
-            <strong>Email:</strong><br>
-            <input type="text" name="lname"><br>
+            <strong>Name:</strong>
+                <input type="text" name="name">
+            <strong>Email:</strong>
+                <input type="text" name="email">
+            <strong>Message:</strong>
+            <textarea type="text" name="message">
             <button class="submitBtn">Submit !</button>
 
 
@@ -51,25 +51,10 @@
 
     </div>
 
-    <br>
-    <br>
-    <br>
-
-
     <div class="footer">
+        <div class="footerLine"></div>
         <p>Copyright @2018</p>
     </div>
-
-
-
-
-
-
-
-
-
-
-
 </body>
 
 </html>
