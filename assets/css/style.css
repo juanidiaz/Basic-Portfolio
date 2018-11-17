@@ -2,6 +2,11 @@
 	box-sizing: border-box;
 }
 
+html, body {
+	height: 100%;
+	margin: 0;
+}
+
 body {
 	background-color: #eeeeee;
 	color: #999999;
@@ -94,10 +99,18 @@ hr{
 	margin: 25px;
 }
 
-.footer {
+.wrapper {
+	min-height: 100%;
+	margin-bottom: -80px; 
+ }
+
+ .footer,
+ .push {
+	height: 80px;
+  }
+.footer{
     background-color: rgb(102, 102, 102);
     color: white;
-	height: 70px;
 	text-align: center;
 	font-size: 10px;
 }
@@ -114,15 +127,17 @@ hr{
 	display: block;
 	clear: both;
 }
-  
+
 .productImage{
 	border: 3px solid  #00000000;
 	float: left;
-	width: 200px;
-	height: 200px;
-	margin: 17px;
+	width: 206px;
+	height: 206px;
+	margin: 11px;
 }
 
+/*  */
+/* img:hover */
 .productImage:hover{
 	border: 3px solid  #4aaaa5;
 }
@@ -132,16 +147,40 @@ hr{
 	color: white;
 	text-align: center;
 	position: relative;
-	width: 100%;
+	width: 100%;;
 	height: 50px;
 	top: -100px;
+	/* padding: 30px 0px; */
 }
 
-input{
+input,
+textarea{
 	width: 98%;
+	padding: 5px;
 }
 
 #contactForm{
+	margin-left: 10px;	
 	font-weight: bold;
-	/* text-align: center; */
+}
+
+#submitButton{
+	background-color: #4aaaa5;
+	color: white;
+	border: none;
+	width: 150px;
+	text-align: center;
+	font-weight: bold;
+    padding: 10px 32px;
+}
+
+#button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
 }
